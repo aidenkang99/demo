@@ -4,15 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Demo Page</title>
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(42, 42, 42);
+            color: white;
+            font-family: helvetica, arial;
+        }
+        header{
+            font-family: helvetica, arial;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .con{
+            display: flex;
+        }
+        .con nav{
+            border-right: 1px solid gray;
+        }
+        .con aside{
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+        nav, aside{
+            padding: 20px;
+            flex-basis: 300px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 20px;
+            flex-basis: 1400px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    This is my web&nbsp;page!<br />
-    And here is another line <br />
-    And another
-    <hr size='2' /> 
-    <h3>This is a smaller heading</h3>
-    <p>This is a paragraph</p>
+    <div class="container">
+        <header>
+            <h1>Hello, my name is Aiden Kang.</h1>
+        </header>
+        <section class="con">
+            <nav>
+                My majors are:
+                <ul>
+                    <li>Computer Science</li>
+                    <li>Engineering Psychology</li>
+                </ul>
+            </nav>
+            <main>
+                I was born and raised in Busan, South Korea, a southernmost city bordering the Pacific Ocean.
+                <br /><br />
+                And no one would ever expect that I have REALLY high standards in life.
+            </main>
+            <aside>
+                My IP address is 130.64.25.61.
+            </aside>
+        </section>
+        <footer>
+            If you wish to contact me, please email me to jihun.kang@tufts.edu or call (781) 960-8531.
+        </footer>
+    </div>
 </body>
 </html>
